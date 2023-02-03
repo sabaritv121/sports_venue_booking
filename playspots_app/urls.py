@@ -10,8 +10,9 @@ router.register('slots', BookingSlotViewSet,basename="slots")
 
 urlpatterns = [
     path("",views.home,name='home'),
-    path('api/',include(router.urls)),
-    # path("bookk",views.book,name="bookk"),
 
+    path('api/',include(router.urls)),
+
+    path('rank/<int:venue_id>/', views.rank),
 
 ]

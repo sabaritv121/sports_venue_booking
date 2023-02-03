@@ -21,7 +21,7 @@ class User(models.Model):
     phone_no = models.CharField(max_length=10)
 
     def __str__(self):
-        return self
+        return self.name
 
 #Booking table
 class Booking(models.Model):
@@ -33,4 +33,6 @@ class Booking(models.Model):
     )
     time_slot = models.CharField(choices=timing,max_length=25)
     date = models.DateField()
+
+
 

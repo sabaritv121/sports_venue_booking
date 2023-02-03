@@ -5,3 +5,4 @@ from playspots_app import models
 
 admin.site.register(models.Venue)
 admin.site.register(models.User)
+admin.site.register(models.Booking)
